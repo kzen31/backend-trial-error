@@ -22,8 +22,8 @@ public class DatabaseSeeder implements ApplicationRunner {
         userService.saveRoleIfNotExists(new Role(null, ERole.ROLE_LENDER));
         userService.saveRoleIfNotExists(new Role(null, ERole.ROLE_BORROWER));
 
-        userService.registerAdminIfNotExist(new UserRegister("Fahmi Al", "pass@gmail.com", "pass"));
-        userService.registerLenderIfNotExists(new UserRegister("Invoker", "invoker@gmail.com", "pass"));
-        userService.registerBorrowerIfNotExists(new UserRegister("Meepo", "meep@gmail.com", "pass"));
+        userService.registerAdminIfNotExist(new UserRegister("Fahmi Al", "pass0@gmail.com", "pass"));
+        userService.registerLenderIfNotExists(new UserRegister("Invoker", "pass1@gmail.com", "pass"));
+        userService.registerBorrowerIfNotExists(new UserRegister("Meepo", "pass2@gmail.com", "pass"));
     }
 }
